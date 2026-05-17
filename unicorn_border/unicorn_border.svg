@@ -1,0 +1,149 @@
+<svg width="100%" viewBox="0 0 680 400" xmlns="http://www.w3.org/2000/svg" role="img">
+<title>Pixelated galaxy border with animated unicorn and rainbow tail</title>
+<desc>Hollow animated border with transparent center, pixelated unicorn traveling around with rainbow tail, galaxy and stars.</desc>
+<defs>
+  <clipPath id="borderOnly">
+    <path fill-rule="evenodd" d="
+      M 0 0 L 680 0 L 680 400 L 0 400 Z
+      M 40 40 L 640 40 L 640 360 L 40 360 Z
+    "/>
+  </clipPath>
+  <style>
+    .px-star { animation: twinkle 2s infinite alternate; }
+    @keyframes twinkle { 0%{opacity:1} 100%{opacity:0.1} }
+    .star-a{animation-delay:0s} .star-b{animation-delay:0.4s} .star-c{animation-delay:0.8s}
+    .star-d{animation-delay:1.2s} .star-e{animation-delay:1.6s} .star-f{animation-delay:0.2s}
+    .star-g{animation-delay:0.6s} .star-h{animation-delay:1.0s} .star-i{animation-delay:1.4s}
+  </style>
+  <path id="travelPath" d="
+    M 340 20
+    L 656 20
+    Q 664 20 664 28
+    L 664 372
+    Q 664 380 656 380
+    L 24 380
+    Q 16 380 16 372
+    L 16 28
+    Q 16 20 24 20
+    Z
+  "/>
+</defs>
+
+<rect x="0" y="0" width="680" height="400" rx="18" ry="18" fill="#0a0014" clip-path="url(#borderOnly)"/>
+
+<g clip-path="url(#borderOnly)">
+  <rect x="10" y="8"   width="8" height="8" fill="#3a1060" opacity="0.8"/>
+  <rect x="18" y="8"   width="8" height="8" fill="#5a1a8a" opacity="0.7"/>
+  <rect x="10" y="16"  width="8" height="8" fill="#5a1a8a" opacity="0.9"/>
+  <rect x="18" y="16"  width="8" height="8" fill="#7a2aaa" opacity="0.6"/>
+  <rect x="644" y="8"  width="8" height="8" fill="#0a2a5a" opacity="0.8"/>
+  <rect x="652" y="8"  width="8" height="8" fill="#1a3a7a" opacity="0.7"/>
+  <rect x="644" y="16" width="8" height="8" fill="#1a3a7a" opacity="0.9"/>
+  <rect x="652" y="16" width="8" height="8" fill="#2a4a9a" opacity="0.6"/>
+  <rect x="10" y="374" width="8" height="8" fill="#2a0a4a" opacity="0.8"/>
+  <rect x="18" y="374" width="8" height="8" fill="#4a1a7a" opacity="0.7"/>
+  <rect x="10" y="382" width="8" height="8" fill="#3a1060" opacity="0.6"/>
+  <rect x="650" y="374" width="8" height="8" fill="#0a1a4a" opacity="0.8"/>
+  <rect x="658" y="374" width="8" height="8" fill="#1a2a6a" opacity="0.7"/>
+  <rect x="650" y="382" width="8" height="8" fill="#0a1a4a" opacity="0.6"/>
+
+  <rect class="px-star star-a" x="50"  y="8"   width="3" height="3" fill="#ffffff"/>
+  <rect class="px-star star-b" x="110" y="5"   width="4" height="4" fill="#ffffcc"/>
+  <rect class="px-star star-c" x="170" y="10"  width="2" height="2" fill="#ffffff"/>
+  <rect class="px-star star-d" x="230" y="6"   width="3" height="3" fill="#ccffff"/>
+  <rect class="px-star star-e" x="290" y="12"  width="2" height="2" fill="#ffffff"/>
+  <rect class="px-star star-f" x="350" y="5"   width="3" height="3" fill="#ffffaa"/>
+  <rect class="px-star star-g" x="410" y="9"   width="2" height="2" fill="#ffffff"/>
+  <rect class="px-star star-h" x="470" y="6"   width="4" height="4" fill="#ccccff"/>
+  <rect class="px-star star-i" x="530" y="11"  width="3" height="3" fill="#ffffff"/>
+  <rect class="px-star star-a" x="590" y="7"   width="2" height="2" fill="#ffccff"/>
+  <rect class="px-star star-b" x="630" y="10"  width="3" height="3" fill="#ffffff"/>
+  <rect class="px-star star-c" x="6"   y="60"  width="3" height="3" fill="#ffffff"/>
+  <rect class="px-star star-e" x="10"  y="110" width="2" height="2" fill="#ffffcc"/>
+  <rect class="px-star star-g" x="5"   y="160" width="4" height="4" fill="#ffffff"/>
+  <rect class="px-star star-a" x="9"   y="210" width="3" height="3" fill="#aaffff"/>
+  <rect class="px-star star-f" x="6"   y="260" width="2" height="2" fill="#ffffff"/>
+  <rect class="px-star star-d" x="10"  y="310" width="3" height="3" fill="#ffccff"/>
+  <rect class="px-star star-b" x="662" y="60"  width="3" height="3" fill="#ffffff"/>
+  <rect class="px-star star-h" x="666" y="110" width="2" height="2" fill="#ffffcc"/>
+  <rect class="px-star star-d" x="661" y="160" width="4" height="4" fill="#ffffff"/>
+  <rect class="px-star star-i" x="665" y="210" width="3" height="3" fill="#ccffff"/>
+  <rect class="px-star star-c" x="662" y="260" width="2" height="2" fill="#ffffff"/>
+  <rect class="px-star star-a" x="666" y="310" width="3" height="3" fill="#ffffaa"/>
+  <rect class="px-star star-f" x="50"  y="382" width="3" height="3" fill="#ffffff"/>
+  <rect class="px-star star-a" x="110" y="386" width="2" height="2" fill="#ffffcc"/>
+  <rect class="px-star star-i" x="170" y="381" width="4" height="4" fill="#ffffff"/>
+  <rect class="px-star star-c" x="230" y="385" width="3" height="3" fill="#ccffff"/>
+  <rect class="px-star star-e" x="290" y="383" width="2" height="2" fill="#ffffff"/>
+  <rect class="px-star star-b" x="350" y="387" width="3" height="3" fill="#ffffaa"/>
+  <rect class="px-star star-g" x="410" y="382" width="2" height="2" fill="#ffffff"/>
+  <rect class="px-star star-d" x="470" y="385" width="4" height="4" fill="#aaaaff"/>
+  <rect class="px-star star-h" x="530" y="381" width="3" height="3" fill="#ffffff"/>
+  <rect class="px-star star-f" x="590" y="384" width="2" height="2" fill="#ffccff"/>
+  <rect class="px-star star-a" x="635" y="383" width="3" height="3" fill="#ffffff"/>
+
+  <rect x="38" y="38" width="604" height="324" rx="10" ry="10" fill="none" stroke="#aa44ee" stroke-width="1" opacity="0.5"/>
+  <rect x="2"  y="2"  width="676" height="396" rx="17" ry="17" fill="none" stroke="#6622cc" stroke-width="1.5" opacity="0.5"/>
+
+  <g>
+    <animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#travelPath"/></animateMotion>
+    <rect x="-18" y="-4"  width="7"  height="3" rx="1" fill="#9900ff" opacity="0.95"/>
+    <rect x="-18" y="-1"  width="7"  height="3" rx="1" fill="#0088ff" opacity="0.95"/>
+    <rect x="-18" y="2"   width="7"  height="3" rx="1" fill="#00cc44" opacity="0.95"/>
+    <rect x="-26" y="-6"  width="9"  height="3" rx="1" fill="#9900ff" opacity="0.85"/>
+    <rect x="-26" y="-3"  width="9"  height="3" rx="1" fill="#0088ff" opacity="0.85"/>
+    <rect x="-26" y="0"   width="9"  height="3" rx="1" fill="#00cc44" opacity="0.85"/>
+    <rect x="-26" y="3"   width="9"  height="3" rx="1" fill="#ffee00" opacity="0.85"/>
+    <rect x="-36" y="-8"  width="11" height="3" rx="1" fill="#9900ff" opacity="0.7"/>
+    <rect x="-36" y="-5"  width="11" height="3" rx="1" fill="#0088ff" opacity="0.7"/>
+    <rect x="-36" y="-2"  width="11" height="3" rx="1" fill="#00cc44" opacity="0.7"/>
+    <rect x="-36" y="1"   width="11" height="3" rx="1" fill="#ffee00" opacity="0.7"/>
+    <rect x="-36" y="4"   width="11" height="3" rx="1" fill="#ff7700" opacity="0.7"/>
+    <rect x="-48" y="-10" width="13" height="3" rx="1" fill="#9900ff" opacity="0.5"/>
+    <rect x="-48" y="-7"  width="13" height="3" rx="1" fill="#0088ff" opacity="0.5"/>
+    <rect x="-48" y="-4"  width="13" height="3" rx="1" fill="#00cc44" opacity="0.5"/>
+    <rect x="-48" y="-1"  width="13" height="3" rx="1" fill="#ffee00" opacity="0.5"/>
+    <rect x="-48" y="2"   width="13" height="3" rx="1" fill="#ff7700" opacity="0.5"/>
+    <rect x="-48" y="5"   width="13" height="3" rx="1" fill="#ff0000" opacity="0.5"/>
+    <rect x="-62" y="-8"  width="15" height="3" rx="1" fill="#0088ff" opacity="0.25"/>
+    <rect x="-62" y="-5"  width="15" height="3" rx="1" fill="#00cc44" opacity="0.25"/>
+    <rect x="-62" y="-2"  width="15" height="3" rx="1" fill="#ffee00" opacity="0.25"/>
+    <rect x="-62" y="1"   width="15" height="3" rx="1" fill="#ff7700" opacity="0.25"/>
+    <rect x="-62" y="4"   width="15" height="3" rx="1" fill="#ff0000" opacity="0.25"/>
+  </g>
+
+  <g>
+    <animateMotion dur="8s" repeatCount="indefinite" rotate="auto"><mpath href="#travelPath"/></animateMotion>
+    <rect x="-8" y="-5"  width="14" height="8" fill="#f0d0ff"/>
+    <rect x="4"  y="-8"  width="5"  height="5" fill="#f0d0ff"/>
+    <rect x="6"  y="-10" width="8"  height="7" fill="#f0d0ff"/>
+    <rect x="13" y="-16" width="2"  height="2" fill="#ffd700"/>
+    <rect x="13" y="-14" width="3"  height="2" fill="#ffd700"/>
+    <rect x="12" y="-12" width="4"  height="2" fill="#ffaa00"/>
+    <rect x="11" y="-7"  width="2"  height="2" fill="#220044"/>
+    <rect x="13" y="-5"  width="1"  height="1" fill="#cc88cc"/>
+    <rect x="5"  y="-12" width="2"  height="2" fill="#ff88cc"/>
+    <rect x="4"  y="-10" width="2"  height="4" fill="#ff44aa"/>
+    <rect x="3"  y="-9"  width="2"  height="3" fill="#aa44ff"/>
+    <rect x="2"  y="-8"  width="2"  height="2" fill="#ff88cc"/>
+    <rect x="-7" y="3"   width="3"  height="5" fill="#e0b0f0"/>
+    <rect x="-3" y="3"   width="3"  height="5" fill="#e0b0f0"/>
+    <rect x="1"  y="3"   width="3"  height="5" fill="#e0b0f0"/>
+    <rect x="5"  y="3"   width="3"  height="5" fill="#e0b0f0"/>
+    <rect x="-7" y="8"   width="3"  height="2" fill="#8844aa"/>
+    <rect x="-3" y="8"   width="3"  height="2" fill="#8844aa"/>
+    <rect x="1"  y="8"   width="3"  height="2" fill="#8844aa"/>
+    <rect x="5"  y="8"   width="3"  height="2" fill="#8844aa"/>
+    <rect x="16" y="-18" width="2"  height="2" fill="#ffffff" opacity="0.9">
+      <animate attributeName="opacity" values="0.9;0;0.9" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="19" y="-13" width="2"  height="2" fill="#ffd700" opacity="0.8">
+      <animate attributeName="opacity" values="0.8;0;0.8" dur="0.7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</g>
+
+<rect x="1" y="1" width="678" height="398" rx="18" ry="18" fill="none" stroke="#7733bb" stroke-width="2">
+  <animate attributeName="stroke-opacity" values="0.3;0.8;0.3" dur="2.5s" repeatCount="indefinite"/>
+</rect>
+</svg>
