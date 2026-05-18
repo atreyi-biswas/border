@@ -1,0 +1,201 @@
+<svg width="680" height="80" viewBox="0 0 680 80" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <clipPath id="sc"><rect x="0" y="0" width="680" height="80" rx="18" ry="18"/></clipPath>
+  <style>
+    .st{animation:tw 2s infinite alternate ease-in-out}
+    .sa{animation-delay:0s}.sb{animation-delay:0.4s}.sc2{animation-delay:0.9s}
+    .sd{animation-delay:1.3s}.se{animation-delay:1.7s}.sf{animation-delay:0.6s}
+    @keyframes tw{0%{opacity:1}100%{opacity:0.08}}
+
+    /* unicorn + trail travel right then left */
+    .uni{animation:moveX 4s linear infinite alternate; transform-origin:0px 40px}
+    .uniflip{animation:moveXflip 4s linear infinite alternate; transform-origin:0px 40px}
+
+    @keyframes moveX{
+      0%  {transform:translateX(50px)}
+      100%{transform:translateX(620px)}
+    }
+    @keyframes moveXflip{
+      0%  {transform:translateX(50px) scaleX(1)}
+      100%{transform:translateX(620px) scaleX(-1)}
+    }
+
+    /* trail segments — each offset behind the unicorn */
+    .t1{animation:tr1 4s linear infinite alternate}
+    .t2{animation:tr2 4s linear infinite alternate}
+    .t3{animation:tr3 4s linear infinite alternate}
+    .t4{animation:tr4 4s linear infinite alternate}
+    .t5{animation:tr5 4s linear infinite alternate}
+    .t6{animation:tr6 4s linear infinite alternate}
+    .t7{animation:tr7 4s linear infinite alternate}
+    .t8{animation:tr8 4s linear infinite alternate}
+
+    @keyframes tr1{0%{transform:translateX(36px)} 100%{transform:translateX(606px)}}
+    @keyframes tr2{0%{transform:translateX(28px)} 100%{transform:translateX(598px)}}
+    @keyframes tr3{0%{transform:translateX(20px)} 100%{transform:translateX(590px)}}
+    @keyframes tr4{0%{transform:translateX(13px)} 100%{transform:translateX(583px)}}
+    @keyframes tr5{0%{transform:translateX(7px)}  100%{transform:translateX(577px)}}
+    @keyframes tr6{0%{transform:translateX(2px)}  100%{transform:translateX(572px)}}
+    @keyframes tr7{0%{transform:translateX(-2px)} 100%{transform:translateX(568px)}}
+    @keyframes tr8{0%{transform:translateX(-5px)} 100%{transform:translateX(565px)}}
+
+    .glow{animation:gp 3s ease-in-out infinite alternate}
+    @keyframes gp{0%{opacity:0.3}100%{opacity:0.85}}
+  </style>
+</defs>
+
+<rect x="0" y="0" width="680" height="80" rx="18" ry="18" fill="#08000f"/>
+
+<g clip-path="url(#sc)">
+  <!-- nebula corners -->
+  <rect x="0"   y="0"  width="14" height="14" fill="#2a0848" opacity="0.9"/>
+  <rect x="14"  y="0"  width="10" height="8"  fill="#4a1278" opacity="0.7"/>
+  <rect x="0"   y="14" width="8"  height="8"  fill="#3a0a60" opacity="0.6"/>
+  <rect x="656" y="0"  width="24" height="14" fill="#081830" opacity="0.9"/>
+  <rect x="648" y="0"  width="8"  height="8"  fill="#0a2040" opacity="0.7"/>
+  <rect x="0"   y="60" width="12" height="20" fill="#1a0530" opacity="0.8"/>
+  <rect x="658" y="60" width="22" height="20" fill="#050f28" opacity="0.8"/>
+
+  <!-- stars -->
+  <rect class="st sa"  x="55"  y="7"  width="3" height="3" fill="#fff"/>
+  <rect class="st sb"  x="120" y="4"  width="2" height="2" fill="#ffffcc"/>
+  <rect class="st sc2" x="190" y="9"  width="3" height="3" fill="#ccffff"/>
+  <rect class="st sd"  x="260" y="5"  width="2" height="2" fill="#fff"/>
+  <rect class="st se"  x="330" y="8"  width="3" height="3" fill="#ffffaa"/>
+  <rect class="st sf"  x="400" y="4"  width="2" height="2" fill="#fff"/>
+  <rect class="st sa"  x="465" y="7"  width="3" height="3" fill="#ccccff"/>
+  <rect class="st sb"  x="530" y="5"  width="2" height="2" fill="#fff"/>
+  <rect class="st sc2" x="600" y="8"  width="3" height="3" fill="#ffccff"/>
+  <rect class="st sd"  x="80"  y="63" width="2" height="2" fill="#fff"/>
+  <rect class="st se"  x="155" y="67" width="3" height="3" fill="#ffffcc"/>
+  <rect class="st sf"  x="230" y="63" width="2" height="2" fill="#fff"/>
+  <rect class="st sa"  x="310" y="68" width="3" height="3" fill="#aaffff"/>
+  <rect class="st sb"  x="385" y="63" width="2" height="2" fill="#fff"/>
+  <rect class="st sc2" x="455" y="67" width="3" height="3" fill="#ffffaa"/>
+  <rect class="st sd"  x="525" y="62" width="2" height="2" fill="#fff"/>
+  <rect class="st se"  x="595" y="65" width="3" height="3" fill="#ffccff"/>
+  <rect class="st sf"  x="640" y="14" width="2" height="2" fill="#fff"/>
+  <rect class="st sa"  x="35"  y="50" width="2" height="2" fill="#ccccff"/>
+
+  <!-- border glow -->
+  <rect x="1" y="1" width="678" height="78" rx="17" ry="17" fill="none" stroke="#5511aa" stroke-width="1.5" opacity="0.7"/>
+  <rect class="glow" x="1" y="1" width="678" height="78" rx="17" ry="17" fill="none" stroke="#9944ee" stroke-width="2"/>
+
+  <!-- ═══════════════ RAINBOW TRAIL ═══════════════ -->
+  <!-- segment 1 - closest, violet -->
+  <g class="t1">
+    <rect x="0" y="33" width="7" height="2" rx="1" fill="#cc00ff" opacity="0.95"/>
+    <rect x="0" y="35" width="7" height="2" rx="1" fill="#6600ff" opacity="0.95"/>
+    <rect x="0" y="37" width="7" height="2" rx="1" fill="#0066ff" opacity="0.95"/>
+    <rect x="0" y="39" width="7" height="2" rx="1" fill="#00cc44" opacity="0.95"/>
+    <rect x="0" y="41" width="7" height="2" rx="1" fill="#aaee00" opacity="0.95"/>
+    <rect x="0" y="43" width="7" height="2" rx="1" fill="#ffee00" opacity="0.95"/>
+    <rect x="0" y="45" width="7" height="2" rx="1" fill="#ff6600" opacity="0.95"/>
+  </g>
+  <!-- segment 2 -->
+  <g class="t2">
+    <rect x="0" y="31" width="8" height="2" rx="1" fill="#cc00ff" opacity="0.85"/>
+    <rect x="0" y="33" width="8" height="2" rx="1" fill="#6600ff" opacity="0.85"/>
+    <rect x="0" y="35" width="8" height="2" rx="1" fill="#0066ff" opacity="0.85"/>
+    <rect x="0" y="37" width="8" height="2" rx="1" fill="#00cc44" opacity="0.85"/>
+    <rect x="0" y="39" width="8" height="2" rx="1" fill="#aaee00" opacity="0.85"/>
+    <rect x="0" y="41" width="8" height="2" rx="1" fill="#ffee00" opacity="0.85"/>
+    <rect x="0" y="43" width="8" height="2" rx="1" fill="#ff6600" opacity="0.85"/>
+    <rect x="0" y="45" width="8" height="2" rx="1" fill="#ff0000" opacity="0.85"/>
+  </g>
+  <!-- segment 3 -->
+  <g class="t3">
+    <rect x="0" y="30" width="9" height="2" rx="1" fill="#cc00ff" opacity="0.72"/>
+    <rect x="0" y="32" width="9" height="2" rx="1" fill="#6600ff" opacity="0.72"/>
+    <rect x="0" y="34" width="9" height="2" rx="1" fill="#0066ff" opacity="0.72"/>
+    <rect x="0" y="36" width="9" height="2" rx="1" fill="#00cc44" opacity="0.72"/>
+    <rect x="0" y="38" width="9" height="2" rx="1" fill="#aaee00" opacity="0.72"/>
+    <rect x="0" y="40" width="9" height="2" rx="1" fill="#ffee00" opacity="0.72"/>
+    <rect x="0" y="42" width="9" height="2" rx="1" fill="#ff6600" opacity="0.72"/>
+    <rect x="0" y="44" width="9" height="2" rx="1" fill="#ff0000" opacity="0.72"/>
+  </g>
+  <!-- segment 4 -->
+  <g class="t4">
+    <rect x="0" y="29" width="10" height="2" rx="1" fill="#cc00ff" opacity="0.58"/>
+    <rect x="0" y="31" width="10" height="2" rx="1" fill="#6600ff" opacity="0.58"/>
+    <rect x="0" y="33" width="10" height="2" rx="1" fill="#0066ff" opacity="0.58"/>
+    <rect x="0" y="35" width="10" height="2" rx="1" fill="#00cc44" opacity="0.58"/>
+    <rect x="0" y="37" width="10" height="2" rx="1" fill="#aaee00" opacity="0.58"/>
+    <rect x="0" y="39" width="10" height="2" rx="1" fill="#ffee00" opacity="0.58"/>
+    <rect x="0" y="41" width="10" height="2" rx="1" fill="#ff6600" opacity="0.58"/>
+    <rect x="0" y="43" width="10" height="2" rx="1" fill="#ff0000" opacity="0.58"/>
+  </g>
+  <!-- segment 5 -->
+  <g class="t5">
+    <rect x="0" y="30" width="9" height="2" rx="1" fill="#6600ff" opacity="0.42"/>
+    <rect x="0" y="32" width="9" height="2" rx="1" fill="#0066ff" opacity="0.42"/>
+    <rect x="0" y="34" width="9" height="2" rx="1" fill="#00cc44" opacity="0.42"/>
+    <rect x="0" y="36" width="9" height="2" rx="1" fill="#aaee00" opacity="0.42"/>
+    <rect x="0" y="38" width="9" height="2" rx="1" fill="#ffee00" opacity="0.42"/>
+    <rect x="0" y="40" width="9" height="2" rx="1" fill="#ff6600" opacity="0.42"/>
+    <rect x="0" y="42" width="9" height="2" rx="1" fill="#ff0000" opacity="0.42"/>
+  </g>
+  <!-- segment 6 -->
+  <g class="t6">
+    <rect x="0" y="31" width="8" height="2" rx="1" fill="#0066ff" opacity="0.28"/>
+    <rect x="0" y="33" width="8" height="2" rx="1" fill="#00cc44" opacity="0.28"/>
+    <rect x="0" y="35" width="8" height="2" rx="1" fill="#aaee00" opacity="0.28"/>
+    <rect x="0" y="37" width="8" height="2" rx="1" fill="#ffee00" opacity="0.28"/>
+    <rect x="0" y="39" width="8" height="2" rx="1" fill="#ff6600" opacity="0.28"/>
+    <rect x="0" y="41" width="8" height="2" rx="1" fill="#ff0000" opacity="0.28"/>
+  </g>
+  <!-- segment 7 -->
+  <g class="t7">
+    <rect x="0" y="32" width="7" height="2" rx="1" fill="#00cc44" opacity="0.16"/>
+    <rect x="0" y="34" width="7" height="2" rx="1" fill="#ffee00" opacity="0.16"/>
+    <rect x="0" y="36" width="7" height="2" rx="1" fill="#ff6600" opacity="0.16"/>
+    <rect x="0" y="38" width="7" height="2" rx="1" fill="#ff0000" opacity="0.16"/>
+  </g>
+  <!-- segment 8 - faintest tip -->
+  <g class="t8">
+    <rect x="0" y="33" width="6" height="2" rx="1" fill="#ffee00" opacity="0.08"/>
+    <rect x="0" y="35" width="6" height="2" rx="1" fill="#ff6600" opacity="0.08"/>
+  </g>
+
+  <!-- ═══════════════ UNICORN ═══════════════ -->
+  <g class="uniflip">
+    <!-- body -->
+    <rect x="-8" y="35" width="14" height="8"  fill="#f0d0ff"/>
+    <!-- neck -->
+    <rect x="4"  y="32" width="5"  height="5"  fill="#eeddf8"/>
+    <!-- head -->
+    <rect x="6"  y="30" width="8"  height="7"  fill="#eeddf8"/>
+    <!-- horn -->
+    <rect x="13" y="23" width="2"  height="2"  fill="#ffe44a"/>
+    <rect x="13" y="25" width="3"  height="2"  fill="#ffd700"/>
+    <rect x="12" y="27" width="4"  height="2"  fill="#ffaa00"/>
+    <!-- eye -->
+    <rect x="11" y="33" width="2"  height="2"  fill="#220033"/>
+    <!-- nostril -->
+    <rect x="13" y="35" width="1"  height="1"  fill="#dd88cc"/>
+    <!-- mane -->
+    <rect x="5"  y="28" width="2"  height="2"  fill="#ff99dd"/>
+    <rect x="4"  y="29" width="2"  height="5"  fill="#ff44aa"/>
+    <rect x="3"  y="30" width="2"  height="4"  fill="#aa44ff"/>
+    <rect x="2"  y="31" width="2"  height="3"  fill="#ff99dd"/>
+    <!-- legs -->
+    <rect x="-7" y="43" width="3"  height="6"  fill="#dda8f0"/>
+    <rect x="-3" y="43" width="3"  height="6"  fill="#dda8f0"/>
+    <rect x="1"  y="43" width="3"  height="6"  fill="#dda8f0"/>
+    <rect x="5"  y="43" width="3"  height="6"  fill="#dda8f0"/>
+    <!-- hooves -->
+    <rect x="-7" y="49" width="3"  height="2"  fill="#7733aa"/>
+    <rect x="-3" y="49" width="3"  height="2"  fill="#7733aa"/>
+    <rect x="1"  y="49" width="3"  height="2"  fill="#7733aa"/>
+    <rect x="5"  y="49" width="3"  height="2"  fill="#7733aa"/>
+    <!-- sparkle at horn tip -->
+    <rect x="16" y="21" width="2"  height="2"  fill="#ffffff">
+      <animate attributeName="opacity" values="1;0;1" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="19" y="26" width="2"  height="2"  fill="#ffd700">
+      <animate attributeName="opacity" values="0;1;0" dur="0.7s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+</g>
+</svg>
